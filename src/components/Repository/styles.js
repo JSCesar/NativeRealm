@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 
 
-export const Container = styled.View`
+export const Container = styled.SafeAreaView`
  padding: 20px;
  border-radius: 4px;
  background: #fff;
@@ -34,5 +34,5 @@ export const Stat = styled.View`
 `;
 
 export const StatCount = styled.Text`
-    margin-left: 6 px;
+    margin-left: 6px;
 `;

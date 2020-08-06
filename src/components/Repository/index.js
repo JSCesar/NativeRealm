@@ -2,16 +2,16 @@ import React from 'react';
 
 import Icon from 'react-native-vector-icons/FontAwesome'
 
-import { 
-    Container, Name, Description, Stats, Stat, StatCount  
-} from './styles';
+import { Text } from 'react-native';
+
+import {  Container, Name, Description, Stats, Stat, StatCount  } from './styles';
 
 export default function Repository({ data }) {
     return (
         <Container>
-            <Name>{  data.name }</Name>
+            <Name>{ data.name }</Name>
             <Description>{ data.description }</Description>
-
+            
             <Stats>
                 <Stat>
                     <Icon name="star" size={16} color="#333"></Icon>
@@ -22,6 +22,7 @@ export default function Repository({ data }) {
                     <StatCount>{ data.forks }</StatCount>
                 </Stat>
             </Stats>
+             
         </Container>
     );
 }
